@@ -1,0 +1,235 @@
+/* CSS ROOT */
+:root {
+    --color-font-primary: #202124;
+    --color-header-button: #4285f4;
+    --color-search-form: #dfe1e5;
+    --color-form-btn: #f8f9fa;
+    --color-footer-background: #f2f2f2;
+    --color-footer-border: #dadce0
+}
+
+/* CSS REST */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: small;
+    color: var(--color-font-primary);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+body, html {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    /*color: inherit;*/
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1480px;
+    padding: 0 2.5rem;
+    width: 100%;
+}
+
+/* HEADER SECTION */
+#header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 0;
+}
+
+#header__nav-left, #header__nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#header__nav-left li {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+#header__nav-right li {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+#header__nav-right .material-icons {
+    cursor: pointer;
+    opacity: .55;
+}
+
+#header__nav-right .material-icons:hover {
+    opacity: .85;
+}
+
+#header__nav-right #sign-in {
+    outline: none;
+    border: 1px solid var(--color-header-button);
+    background: var(--color-header-button);
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    border-radius: .2rem;
+    color: white;
+    padding: 0 1.2rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#header__nav-right .img-circle {
+    border-radius: 50%;
+}
+
+/* MAIN SECTION */
+main #search__content {
+    text-align: center;
+}
+
+main #search__content-image {
+    padding-top: 9.6rem;
+    margin-bottom: 1.2rem;
+}
+
+main #search__form {
+    width: auto;
+    max-width: 584px;
+    border: 1px solid var(--color-search-form);
+    box-shadow: none;
+    border-radius: 2.4rem;
+    height: 4.5rem;
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+main #search__form:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+
+main .search__form-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+main label {
+    width: 85%;
+}
+
+main label #search__form-input {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0, .87);
+    font-size: 1.6rem;
+}
+
+main #search__form .search__voice-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+main .btn__group-primary {
+    background-color: var(--color-form-btn);
+    border: 1px solid var(--color-form-btn);
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 1.4rem;
+    margin: .4rem .4rem;
+    padding: 0 1.6rem;
+    line-height: 2.7rem;
+    height: 3.6rem;
+    min-width: 5.4rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+main .btn__group-primary:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: var(--color-form-btn);
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-footer-background);
+    line-height: 4rem;
+    border-top: 1px solid var(--color-footer-border);
+    min-width: 40rem;
+}
+
+footer .country {
+    color: rgba(0,0,0,.54);
+    border-bottom: 1px solid var(--color-footer-border);
+    font-size: 1.5rem;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--color-footer-background);
+}
+
+footer #footer__middle {
+    margin-right: 13rem;
+}
+
+footer #footer__left, #footer__right {
+    display: flex;
+    align-items: center;
+}
+
+footer #footer__left li {
+    margin-right: 2.7rem;
+}
+
+footer #footer__right li {
+    margin-left: 2.7rem;
+}
+
+footer img {
+    height: 1.4rem;
+    margin-right: .6rem;
+}
+
+footer a {
+    color: rgba(0,0,0,.54)
+}
